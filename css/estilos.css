@@ -1,12 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body{
-  background-color: #225599;
+  background-image: url('../img/fundo.jpg');
   font-family: Arial;
-  background-size: auto 100vh;
+  background-size: 100vw 100vh;
   height: 100vh; 
+}
+
+@media screen and (min-width: 450px) and (max-width: 850px) {
+  .site-title{
+    font-size: 40px;
+  }
+
+  .site-subtitle {
+    font-size: 20px;
+  }
+
+  section h2 {
+    font-size: 24px;
+  }
+  
+}
+
+@media ( min-width: 850px){
+  .site-title {
+    font-size: 50px;
+  }
+
+  .site-subtitle {
+    font-size: 25px;
+  }
+
+  section h2 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 450px){
+  .site-title{
+    font-size: 28px;
+  }
+
+  .site-subtitle{
+    font-size: 14px;
+  }
+
+  section h2 {
+    font-size: 18px;
+  }
+}
+
+header{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .menu{
   background-color: white;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+}
+
+.menu a {
+  display: block;
+  padding: 10px 20px;
 }
 
 .menu ul {
@@ -35,4 +99,8 @@ a:hover {
 
 .site-subtitle {
   font-style: italic;
+}
+
+section h2 {
+  margin-left: 10vw;
 }
