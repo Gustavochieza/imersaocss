@@ -2,19 +2,61 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-repeat: no-repeat;
   }
 
 body{
     background-image: url('../img/fundo2.jpg');
     font-family: Arial;
     background-size: 100vw 100vh;
-    height: 100vh; 
+    height: 100vh;
   }
+  
+  @media screen and (min-width: 360px) and (min-height: 640px) and (orientation: portrait), (min-width: 640px) and (min-height: 360px) and (orientation: landscape){
+    .sobre {
+      font-size: 1.1em;
+    }
+  }
+  
+  
+    @media screen and (min-height: 731px) and (min-width: 411px) and (orientation: portrait), (min-height: 411px) and (min-width: 731px) and (orientation: landscape), (min-height: 810px) and (min-width: 370px) and (orientation: portrait), (min-height: 370px) and (min-width: 810px) and (orientation: landscape){
+      .sobre{
+        font-size: 1.33em;
+      }
+    }
+
+    @media screen and (min-height: 1000px) and (min-width: 760px) and (orientation: portrait), (min-height: 760px) and (min-width: 1000px) and (orientation: landscape){
+      .sobre{
+        font-size: 2em;
+      }
+    }
+
+    @media screen and (min-height: 1200px) and (min-width: 600px) and (orientation: portrait), (min-height: 600px) and (min-width: 1200px) and (orientation: landscape){
+      .sobre{
+        font-size: 2.26em;
+      }
+    }
+
+    @media screen and (min-height: 1360px) and (min-width: 1000px) and (orientation: portrait), (min-height: 1000px) and (min-width: 1360px) and (orientation: landscape){
+      .sobre{
+        font-size: 2.68em;
+      }
+    }
+
+    @media screen and (min-height: 1800px) and (min-width: 1000px) and (orientation: portrait), (min-height: 1000px) and (min-width: 1800px) and (orientation: landscape){
+      .sobre{
+        font-size: 3em;
+      }
+    }
 
   header{
-    height: 100vh;
+    height: 92.4vh;
+  }
+
+  div {
     display: flex;
     justify-content: center;
+
   }
   
   .menu{
@@ -49,25 +91,22 @@ body{
 
 .sobre {
     color: whitesmoke;
-    text-align: center;
-    position: absolute;
-    top: 7vh;
-    padding: 15vw 15vh;
 }
 
-.sobre h2 {
-    font-size: 3em;
-    margin-bottom: 20px;
-    font-family: 'Hind', sans-serif;
+h1 {
+  font-family: 'Hind', sans-serif;
+  text-align: center;
+  margin-top: 13vh;
+  margin-bottom: 1vh;
 }
 
-.sobre p {
-    font-size: 2em;
+p {
     font-family: 'Share Tech Mono', monospace;
+    padding: 0 15vw;
 }
 
   footer {
-    height: 50px;
+    height: 7.6vh;
     width: 100vw;
     position: absolute;
     background-color: black;
