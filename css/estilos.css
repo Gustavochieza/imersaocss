@@ -72,12 +72,17 @@ header{
   background-color: rgba(255, 255, 255, 0.479);
   position: fixed;
   top: 0;
+  height: 6.5vh;
   width: 100vw;
 }
 
 .menu a {
   display: block;
   padding: 10px 20px;
+}
+
+.menu a:hover {
+  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.7);
 }
 
 .menu ul {
@@ -92,6 +97,7 @@ header{
 a {
   color: rgb(247, 255, 255);
   text-decoration: none;
+  transition: all 500ms;
 }
 
 a:hover {
@@ -115,38 +121,28 @@ a:hover {
   font-style: italic;
 }
 
-.portifolio {
-  padding: 2.5em;
-  color: whitesmoke;
-}
-
-.portifolio h2 {
-  text-align: center;
-  margin-bottom: 1.6em;
-}
-
-.portifolio .grid {
+.grid {
   display: grid;
+  grid-template-columns: repeat(2, auto);
   gap: 2em;
-}
-
-.portifolio figcaption {
-  font-size: 1.6em;
-}
-
-.portifolio figure {
-  text-align: center;
-}
-
-.img-portifolio {
-  width: 280px;
-  height: auto;
+  justify-content: space-evenly;
+  align-content: center;
 }
 
 footer {
-  height: 50px;
+  height: 7.6vh;
   width: 100vw;
   position: absolute;
   bottom: 0;
   background-color: black;
+}
+
+.contato a{
+  font-size: 6.5vh;
+}
+
+.contato a:active,
+.contato a:hover{
+  text-decoration: none;
+  text-shadow: 0px 0px 10px rgba(211, 215, 255, 0.7);
 }
