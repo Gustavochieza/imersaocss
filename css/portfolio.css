@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body{
+    background-image: url('../img/fundo2.jpg');
+    font-family: Arial;
+    background-size: cover; 
+  }
+
+  header {
+    height: 7vh;
+  }
+  
+  @media screen and (min-width:1120px){
+    .portfolio h2 {
+      font-size: 50px;
+    }
+
+    .portfolio .grid {
+      grid-template-columns: repeat(4, 260px);
+    }
+    
+    footer {
+      bottom: 0;
+    }
+
+    .portfolio{
+      height: 100vh;
+    }
+  }
+
+  @media screen and (min-width:850px) and (max-width: 1120px){
+    .portfolio h2 {
+        font-size: 42px;
+      }
+      
+      .portfolio .grid {
+        grid-template-columns: repeat(2, 320px);
+        margin-bottom: 5vh;
+    }
+}
+
+@media screen and (min-width:650px) and (max-width: 850px){
+    .portfolio h2 {
+        font-size: 35px;
+    }
+
+    .portfolio .grid {
+      grid-template-columns: repeat(2, 250px);
+      margin-bottom: 6vh;
+    }
+}
+
+@media screen and (max-width:650px){
+    .portfolio h2 {
+        font-size: 30px;
+    }
+
+    .portfolio .grid {
+            margin-bottom: 6vh;
+    }
+}
+
+.menu{
+    background-color: rgba(255, 255, 255, 0.479);
+    position: fixed;
+    top: 0;
+    width: 100vw;
+  }
+  
+  .menu a {
+    display: block;
+    padding: 10px 20px;
+  }
+
+  .menu a:hover {
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.7);
+  }
+  
+  .menu ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .menu li {
+    list-style: none;
+  }
+  
+  a {
+    color: rgb(247, 255, 255);
+    text-decoration: none;
+    transition: all 500ms;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+
+.portfolio {
+    padding: 0.8em;
+    color: whitesmoke;
+  }
+  
+  .portfolio h2 {
+    text-align: center;
+    margin-bottom: 1.3em;
+    margin-top: 2vh;
+    font-family: 'Hind', sans-serif;
+  }
+  
+  .portfolio .grid {
+    display: grid;
+    gap: 2em;
+    justify-content: center;
+    align-content: center;
+  }
+  
+  .portfolio figcaption {
+    font-size: 1.6em;
+    font-family: 'Hind', sans-serif;
+  }
+  
+  .portfolio figure {
+    text-align: center;
+  }
+  
+  .img-portfolio {
+    width: 30vh;
+    height: 20vh;
+    object-fit: cover;
+  }
+
+  footer {
+    height: 7.6vh;
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+    background-color: black;
+  }
+
+  .contato {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 2em;
+    justify-content: space-evenly;
+    align-content: center;
+  }
+  
+  .contato a{
+    font-size: 6.5vh;
+  }
+  
+  .contato a:active,
+  .contato a:hover{
+    text-decoration: none;
+    text-shadow: 0px 0px 10px rgba(211, 215, 255, 0.7);
+  }
+  
